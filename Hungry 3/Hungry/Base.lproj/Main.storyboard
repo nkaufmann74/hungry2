@@ -45,13 +45,15 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hungry?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vTD-0b-MIP">
                                 <rect key="frame" x="120" y="142" width="135" height="40"/>
                                 <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="30"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EXV-Wg-d2z">
                                 <rect key="frame" x="190" y="283" width="98" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="New User?"/>
+                                <state key="normal" title="New User?">
+                                    <color key="titleColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="newUserButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r2w-PO-TsN"/>
                                     <segue destination="YhP-cZ-qIj" kind="show" id="i17-7f-Axy"/>
@@ -64,13 +66,15 @@
                                     <constraint firstAttribute="height" constant="30" id="Y4N-v3-cMq"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="Log In"/>
+                                <state key="normal" title="Log In">
+                                    <color key="titleColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="logInButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hml-3n-qgK"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.76788818836212158" green="0.92179298400878906" blue="0.94338607788085938" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ozA-AO-llr" firstAttribute="trailing" secondItem="EXV-Wg-d2z" secondAttribute="trailing" id="16I-Xv-sMk"/>
                             <constraint firstItem="vTD-0b-MIP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="78" id="3gw-zN-x0n"/>
@@ -116,7 +120,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create Account" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xGU-i0-qmm">
                                 <rect key="frame" x="16" y="81" width="343" height="20"/>
                                 <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ROs-i9-0uY">
@@ -154,14 +158,16 @@
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3cl-gL-ZJM">
                                 <rect key="frame" x="137" y="278" width="100" height="30"/>
-                                <state key="normal" title="SIGN UP"/>
+                                <state key="normal" title="SIGN UP">
+                                    <color key="titleColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="signUpButtonAction:" destination="YhP-cZ-qIj" eventType="touchUpInside" id="KsR-Kc-Ufh"/>
                                     <segue destination="zaG-9j-IeB" kind="show" id="FKC-pm-Y0V"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.76788818836212158" green="0.92179298400878906" blue="0.94338607788085938" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="3db-9t-S66" firstAttribute="trailing" secondItem="3Mp-Tb-VqF" secondAttribute="trailing" id="16K-Rw-RGj"/>
                             <constraint firstItem="vQH-vg-FST" firstAttribute="top" secondItem="ROs-i9-0uY" secondAttribute="bottom" constant="8" symbolic="YES" id="1vN-8x-TU2"/>
@@ -200,6 +206,44 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e8J-tL-YYb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1348" y="166"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="eSJ-aS-1zP">
+            <objects>
+                <viewController storyboardIdentifier="Settings" id="Yk8-fI-FDN" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="m04-CI-yYE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My Account" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jsG-7V-DnN">
+                                <rect key="frame" x="16" y="20" width="343" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QxW-aC-4Nq">
+                                <rect key="frame" x="16" y="63" width="160" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&lt;name&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O3D-rb-cws">
+                                <rect key="frame" x="199" y="63" width="160" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="XCg-nK-NeK"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9gQ-1b-yJi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="476" y="880.20989505247383"/>
         </scene>
         <!--Main3-->
         <scene sceneID="dai-8W-qUd">

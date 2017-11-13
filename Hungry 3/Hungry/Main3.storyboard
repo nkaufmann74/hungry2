@@ -104,7 +104,7 @@
             </objects>
             <point key="canvasLocation" x="-2910" y="237"/>
         </scene>
-        <!--Item-->
+        <!--Search-->
         <scene sceneID="GeZ-qC-zPr">
             <objects>
                 <tableViewController id="Sbb-nY-vc4" customClass="FilterTableViewController" customModule="Hungry" customModuleProvider="target" sceneMemberID="viewController">
@@ -147,13 +147,13 @@
                             <outlet property="delegate" destination="Sbb-nY-vc4" id="vaF-M7-ASv"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="CbG-jD-yYw"/>
+                    <tabBarItem key="tabBarItem" title="Search" id="CbG-jD-yYw"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="19I-b3-t7T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1255" y="-71"/>
         </scene>
-        <!--Item-->
+        <!--Shopping List-->
         <scene sceneID="9Hc-RZ-KU2">
             <objects>
                 <tableViewController id="Bnw-kF-gq1" customClass="ListTableViewController" customModule="Hungry" customModuleProvider="target" sceneMemberID="viewController">
@@ -181,7 +181,7 @@
                             <outlet property="delegate" destination="Bnw-kF-gq1" id="96H-DC-w6Y"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="6HR-Pf-Jcp"/>
+                    <tabBarItem key="tabBarItem" title="Shopping List" id="6HR-Pf-Jcp"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vFs-nf-8Ah" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -288,11 +288,11 @@
             </objects>
             <point key="canvasLocation" x="664.79999999999995" y="1578.2608695652175"/>
         </scene>
-        <!--Item-->
+        <!--Home-->
         <scene sceneID="evH-BT-lmG">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="krH-56-U0L" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="m8D-bM-1R5"/>
+                    <tabBarItem key="tabBarItem" title="Home" id="m8D-bM-1R5"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tfm-6r-UN6">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -307,11 +307,11 @@
             </objects>
             <point key="canvasLocation" x="-1254" y="-807"/>
         </scene>
-        <!--Item-->
+        <!--Recipe Box-->
         <scene sceneID="eNu-yV-qet">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Adj-F8-26C" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="zRX-EO-l3G"/>
+                    <tabBarItem key="tabBarItem" title="Recipe Box" id="zRX-EO-l3G"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3uo-OA-f3u">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>

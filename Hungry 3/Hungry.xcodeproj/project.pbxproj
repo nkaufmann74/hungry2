@@ -16,7 +16,6 @@
 		A738E0271FA0129F00FD37E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A738E0261FA0129F00FD37E8 /* ViewController.swift */; };
 		A738E02A1FA0129F00FD37E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A738E0281FA0129F00FD37E8 /* Main.storyboard */; };
 		A738E02D1FA0129F00FD37E8 /* Hungry.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A738E02B1FA0129F00FD37E8 /* Hungry.xcdatamodeld */; };
-		A738E02F1FA0129F00FD37E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A738E02E1FA0129F00FD37E8 /* Assets.xcassets */; };
 		A738E0321FA0129F00FD37E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A738E0301FA0129F00FD37E8 /* LaunchScreen.storyboard */; };
 		E82515941FB5335300AD39EA /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82515931FB5335300AD39EA /* Recipe.swift */; };
 		E82515981FB5339200AD39EA /* RecipeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82515971FB5339200AD39EA /* RecipeTableViewController.swift */; };
@@ -41,7 +40,6 @@
 		A738E0261FA0129F00FD37E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A738E0291FA0129F00FD37E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A738E02C1FA0129F00FD37E8 /* Hungry.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Hungry.xcdatamodel; sourceTree = "<group>"; };
-		A738E02E1FA0129F00FD37E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A738E0311FA0129F00FD37E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A738E0331FA0129F00FD37E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB2B5ED9E16C1134E5F912B5 /* Pods-Hungry.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hungry.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hungry/Pods-Hungry.release.xcconfig"; sourceTree = "<group>"; };
@@ -113,7 +111,6 @@
 				A738E0261FA0129F00FD37E8 /* ViewController.swift */,
 				A738E0281FA0129F00FD37E8 /* Main.storyboard */,
 				E825159F1FB5347100AD39EA /* Main3.storyboard */,
-				A738E02E1FA0129F00FD37E8 /* Assets.xcassets */,
 				A738E0301FA0129F00FD37E8 /* LaunchScreen.storyboard */,
 				A738E0331FA0129F00FD37E8 /* Info.plist */,
 				E825159D1FB5340300AD39EA /* PersistenceService.swift */,
@@ -197,7 +194,6 @@
 			files = (
 				A738E0321FA0129F00FD37E8 /* LaunchScreen.storyboard in Resources */,
 				E82515A01FB5347100AD39EA /* Main3.storyboard in Resources */,
-				A738E02F1FA0129F00FD37E8 /* Assets.xcassets in Resources */,
 				A738E02A1FA0129F00FD37E8 /* Main.storyboard in Resources */,
 				57845B951FB53843002AD797 /* GoogleService-Info.plist in Resources */,
 			);
