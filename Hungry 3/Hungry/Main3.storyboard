@@ -15,7 +15,7 @@
         </array>
     </customFonts>
     <scenes>
-        <!--Item-->
+        <!--Home-->
         <scene sceneID="gKr-sh-Kmg">
             <objects>
                 <collectionViewController id="59m-5c-ThA" customClass="CollectionViewController" customModule="Hungry" customModuleProvider="target" sceneMemberID="viewController">
@@ -74,7 +74,7 @@
                             <outlet property="dataSource" destination="59m-5c-ThA" id="Ve2-Q0-db9"/>
                         </connections>
                     </collectionView>
-                    <tabBarItem key="tabBarItem" title="Item" id="TvO-RE-avE"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="home" id="TvO-RE-avE"/>
                     <navigationItem key="navigationItem" id="xdu-mY-ONI"/>
                     <connections>
                         <outlet property="collectionView" destination="h0I-g5-wbe" id="NhB-Xe-a0y"/>
@@ -147,7 +147,7 @@
                             <outlet property="delegate" destination="Sbb-nY-vc4" id="vaF-M7-ASv"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Search" id="CbG-jD-yYw"/>
+                    <tabBarItem key="tabBarItem" title="Search" image="search" id="CbG-jD-yYw"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="19I-b3-t7T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -181,7 +181,7 @@
                             <outlet property="delegate" destination="Bnw-kF-gq1" id="96H-DC-w6Y"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Shopping List" id="6HR-Pf-Jcp"/>
+                    <tabBarItem key="tabBarItem" title="Shopping List" image="shopping_cart_loaded" id="6HR-Pf-Jcp"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vFs-nf-8Ah" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -292,7 +292,7 @@
         <scene sceneID="evH-BT-lmG">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="krH-56-U0L" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" id="m8D-bM-1R5"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="home" id="m8D-bM-1R5"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tfm-6r-UN6">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -311,7 +311,7 @@
         <scene sceneID="eNu-yV-qet">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Adj-F8-26C" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Recipe Box" id="zRX-EO-l3G"/>
+                    <tabBarItem key="tabBarItem" title="Recipe Box" image="list" id="zRX-EO-l3G"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3uo-OA-f3u">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -327,4 +327,10 @@
             <point key="canvasLocation" x="-1256" y="1569.7151424287858"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="home" width="30" height="30"/>
+        <image name="list" width="30" height="30"/>
+        <image name="search" width="30" height="30"/>
+        <image name="shopping_cart_loaded" width="30" height="30"/>
+    </resources>
 </document>
