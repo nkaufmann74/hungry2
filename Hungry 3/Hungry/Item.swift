@@ -9,9 +9,15 @@
 import Foundation
 
 class Item {
-    var name:String
     
+    fileprivate var _name:String = ""
+
     init(name:String) {
-        self.name = name
+        self._name = name
+    }
+    
+    var name:String {
+        get { return _name }
+        set (newValue) { _name = newValue }
     }
 }

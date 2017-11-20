@@ -16,6 +16,7 @@ class ListTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = "Shopping List"
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -47,6 +48,19 @@ class ListTableViewController: UITableViewController {
         cell.textLabel?.text = item.name
         
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if (editingStyle == UITableViewCellEditingStyle.delete) {
+            PersistenceService.shared.deleteItem(index: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: UITableViewRowAnimation.automatic)
+            PersistenceService.shared.saveContext()
+            self.tableView.reloadData()
+        }
     }
     
     @IBAction func btnAddAction(_ sender: Any) {

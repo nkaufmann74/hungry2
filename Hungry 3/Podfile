@@ -2,7 +2,11 @@
 platform :ios, '11.0'
 
 target 'Hungry' do
-  
   pod 'Firebase/Auth'
-
+  use_frameworks!
+  pod 'FacebookLogin'
+  pod 'FacebookShare'
+  pod 'FacebookCore'
 end
+
+

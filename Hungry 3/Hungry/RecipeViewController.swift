@@ -11,7 +11,6 @@ import UIKit
 class RecipeViewController: UIViewController {
     @IBOutlet weak var photoImageView: UIImageView!
     @IBOutlet weak var ratingControl: RatingControl!
-    @IBOutlet weak var recipeLabel: UILabel!
     @IBOutlet weak var ingredientsLabel: UILabel!
     @IBOutlet weak var stepsLabel: UILabel!
     
@@ -19,18 +18,25 @@ class RecipeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = recipe.name
-        recipeLabel.text = recipe.name
+        navigationItem.title = recipe.name
+        ingredientsLabel.lineBreakMode = .byWordWrapping
+        ingredientsLabel.numberOfLines = 0
+        stepsLabel.lineBreakMode = .byWordWrapping
+        stepsLabel.numberOfLines = 0
+        
         
         var ingredientsList:String = ""
+        let bulletPt = "•"
         for ingredient in recipe.ingredients {
-            ingredientsList += ingredient + "\n"
+            ingredientsList += "\(bulletPt) " + "\(ingredient)\n"
         }
         ingredientsLabel.text = ingredientsList
         
         var stepsList:String = ""
+        var i = 1
         for step in recipe.steps {
-            stepsList += step + "\n"
+            stepsList += "\(i). " + "\(step)\n\n"
+            i+=1
         }
         stepsLabel.text = stepsList
         
@@ -44,8 +50,8 @@ class RecipeViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
+    
     /*
     // MARK: - Navigation
 

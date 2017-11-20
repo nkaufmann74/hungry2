@@ -8,14 +8,51 @@
 
 import UIKit
 import Firebase
+import FacebookLogin
 
-class LogInViewController: UIViewController {
-
+class LogInViewController: UIViewController, LoginButtonDelegate {
+   
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let loginButton = LoginButton(readPermissions: [.publicProfile])
+        view.addSubview(loginButton)
+        loginButton.frame = CGRect (x: 87, y: 400, width: view.frame.width - 175, height: 50)
+        
+        loginButton.delegate = self
+    }
+    
+    func loginButtonDidCompleteLogin(_ loginButton: LoginButton, result: LoginResult) {
+        
+    }
+    
+    func loginButtonDidLogOut(_ loginButton: LoginButton) {
+        
+    }
+    
+    func loginButton(loginButton: LoginButton!, didCompleteWithResult result: LoginResult!, error: NSError?) {
+        if error != nil {
+            print("ERROR")
+            //print(error.localizedDescription)
+            return
+        }
+        self.performSegue(withIdentifier: "Settings", sender: nil)
+        print("Successful Login")
+        
+    }
+    
+   override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        if Auth.auth().currentUser != nil {
+            //NEED TO SEGUE TO HOME SCREEN
+            let storyboard = UIStoryboard(name: "Main3", bundle: nil)
+            let tab = storyboard.instantiateViewController(withIdentifier: "TabBar")
+            self.present(tab, animated: true, completion: nil)
+            //self.performSegue(withIdentifier: "Settings", sender: nil)
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -52,8 +89,11 @@ class LogInViewController: UIViewController {
                 myActivityIndicator.stopAnimating()
                 myActivityIndicator.hidesWhenStopped = true
                 //MOVE TO HOME SCREEN
+                let storyboard = UIStoryboard(name: "Main3", bundle: nil)
+                let tab = storyboard.instantiateViewController(withIdentifier: "TabBar")
+                self.present(tab, animated: true, completion: nil)
             } else {
-                self.displayMessage(userMessage: "Registration Failed.. Please Try Again")
+                self.displayMessage(userMessage: "Login Failed.. Please Try Again")
                 myActivityIndicator.stopAnimating()
                 myActivityIndicator.hidesWhenStopped = true
             }

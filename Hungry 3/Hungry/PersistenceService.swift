@@ -59,7 +59,6 @@ class PersistenceService {
     // MARK: - Core Data support
     
     func saveContext () {
-        let context = persistentContainer.viewContext
         if context.hasChanges {
             do {
                 try context.save()
@@ -92,14 +91,12 @@ class PersistenceService {
     
     func fetchItems() {
         
-        let managedContext = persistentContainer.viewContext
-        
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName:"Item")
         
         var fetchedResults:[NSManagedObject]? = nil
         
         do {
-            try fetchedResults = managedContext.fetch(fetchRequest) as? [NSManagedObject]
+            try fetchedResults = context.fetch(fetchRequest) as? [NSManagedObject]
         } catch {
             // what to do if an error occurs?
             let nserror = error as NSError
@@ -114,19 +111,17 @@ class PersistenceService {
     
     func saveItem(name: String) {
         
-        let managedContext = persistentContainer.viewContext
-        
         // Create the entity we want to save
-        let entity = NSEntityDescription.entity(forEntityName: "Item", in: managedContext)
+        let entity = NSEntityDescription.entity(forEntityName: "Item", in: context)
         
-        let item = NSManagedObject(entity: entity!, insertInto:managedContext)
+        let item = NSManagedObject(entity: entity!, insertInto:context)
         
         // Set the attribute values
         item.setValue(name, forKey: "name")
         
         // Commit the changes.
         do {
-            try managedContext.save()
+            try context.save()
             items.append(item)
         } catch {
             // what to do if an error occurs?
@@ -136,5 +131,25 @@ class PersistenceService {
         }
     }
     
+    func deleteItem(index:Int) {
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName:"Item")
+        items.remove(at: index)
+        if (try? getItem(index: index)) != nil {
+            if let result = try? context.fetch(fetchRequest) {
+                do {
+                    try context.save()
+                    for object in result {
+                        context.delete(object as! NSManagedObject)
+                    }
+                } catch {
+                    let nserror = error as NSError
+                    NSLog("Unresolved error \(nserror), \(nserror.userInfo)")
+                    abort()
+                }
+            }
+        } else {
+            abort()
+        }
+    }
 }
 

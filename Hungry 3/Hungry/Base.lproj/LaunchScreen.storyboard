@@ -8,11 +8,6 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="Chalkduster.ttf">
-            <string>Chalkduster</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
@@ -22,19 +17,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hungry?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EOR-48-i6v">
-                                <rect key="frame" x="0.0" y="271" width="375" height="84"/>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="36"/>
-                                <color key="textColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hungry- (1)" translatesAutoresizingMaskIntoConstraints="NO" id="00h-j9-apw">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.63893951587614228" green="0.16159826219149995" blue="0.18317346395786793" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.5" green="0.0" blue="0.023386418764902217" alpha="0.80313570205479456" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="EOR-48-i6v" secondAttribute="bottom" constant="312" id="g5J-dA-aLZ"/>
-                            <constraint firstItem="EOR-48-i6v" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="251" id="hYy-45-RPD"/>
-                            <constraint firstItem="EOR-48-i6v" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="v7d-iq-KJF"/>
-                            <constraint firstAttribute="trailing" secondItem="EOR-48-i6v" secondAttribute="trailing" id="ww4-hs-0in"/>
+                            <constraint firstItem="00h-j9-apw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="36u-Hl-Lk5"/>
+                            <constraint firstItem="00h-j9-apw" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="UpE-2Y-X3b"/>
+                            <constraint firstItem="00h-j9-apw" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="b1b-o7-09N"/>
+                            <constraint firstItem="00h-j9-apw" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="n9s-sK-Wpl"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -44,4 +37,7 @@
             <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Hungry- (1)" width="500" height="500"/>
+    </resources>
 </document>

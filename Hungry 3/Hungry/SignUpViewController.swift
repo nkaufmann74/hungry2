@@ -73,6 +73,9 @@ class SignUpViewController: UIViewController {
                 myActivityIndicator.stopAnimating()
                 myActivityIndicator.hidesWhenStopped = true
                 //GO BACK TO HOME SCREEN
+                let storyboard = UIStoryboard(name: "Main3", bundle: nil)
+                let tab = storyboard.instantiateViewController(withIdentifier: "TabBar")
+                self.present(tab, animated: true, completion: nil)
                 
             } else {
                 self.displayMessage(userMessage: "Registration Failed.. Please Try Again")
