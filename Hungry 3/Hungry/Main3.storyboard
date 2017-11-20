@@ -23,7 +23,7 @@
         <scene sceneID="gKr-sh-Kmg">
             <objects>
                 <collectionViewController id="59m-5c-ThA" customClass="CollectionViewController" customModule="Hungry" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="h0I-g5-wbe" customClass="I">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="h0I-g5-wbe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -81,7 +81,7 @@
                     <navigationItem key="navigationItem" id="xdu-mY-ONI">
                         <barButtonItem key="rightBarButtonItem" title="Settings" id="t8h-yJ-gZ2">
                             <connections>
-                                <action selector="settingsButton:" destination="59m-5c-ThA" id="3QQ-e0-OZ8"/>
+                                <action selector="settingsButton:" destination="59m-5c-ThA" id="LpS-ya-ykC"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -286,7 +286,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9go-5a-9bQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-916" y="1638.5307346326838"/>
+            <point key="canvasLocation" x="-175" y="1638"/>
         </scene>
         <!--Recipe View Controller-->
         <scene sceneID="9gc-yW-m1z">
@@ -401,7 +401,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fw7-aO-FhW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="212" y="1637.1814092953525"/>
+            <point key="canvasLocation" x="756" y="1637"/>
         </scene>
         <!--Recipe Box-->
         <scene sceneID="fT5-UH-rIq">
@@ -420,7 +420,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z2Z-d6-0GS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1796" y="1638"/>
+            <point key="canvasLocation" x="-1255" y="1638"/>
         </scene>
         <!--Home-->
         <scene sceneID="DXd-2C-WBS">
