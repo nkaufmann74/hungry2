@@ -26,7 +26,9 @@ class LogInViewController: UIViewController, LoginButtonDelegate {
     }
     
     func loginButtonDidCompleteLogin(_ loginButton: LoginButton, result: LoginResult) {
-        
+        let storyboard = UIStoryboard(name: "Main3", bundle: nil)
+        let tab = storyboard.instantiateViewController(withIdentifier: "TabBar")
+        self.present(tab, animated: true, completion: nil)
     }
     
     func loginButtonDidLogOut(_ loginButton: LoginButton) {
@@ -39,8 +41,10 @@ class LogInViewController: UIViewController, LoginButtonDelegate {
             //print(error.localizedDescription)
             return
         }
-        self.performSegue(withIdentifier: "Settings", sender: nil)
-        print("Successful Login")
+        let storyboard = UIStoryboard(name: "Main3", bundle: nil)
+        let tab = storyboard.instantiateViewController(withIdentifier: "TabBar")
+        self.present(tab, animated: true, completion: nil)
+        //print("Successful Login")
         
     }
     

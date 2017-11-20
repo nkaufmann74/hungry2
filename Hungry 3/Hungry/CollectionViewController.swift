@@ -74,9 +74,9 @@ class CollectionViewController: UICollectionViewController {
     
     
     @IBAction func settingsButton(_ sender: Any) {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+     /*   let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let settingsVC = storyboard.instantiateViewController(withIdentifier: "Settings")
-        self.present(settingsVC, animated: true, completion: nil)
+        self.present(settingsVC, animated: true, completion: nil) */
     }
     
     /*

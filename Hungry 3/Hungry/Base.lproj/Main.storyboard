@@ -5,7 +5,6 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
-        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -203,72 +202,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e8J-tL-YYb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1345" y="133"/>
-        </scene>
-        <!--Settings View Controller-->
-        <scene sceneID="eSJ-aS-1zP">
-            <objects>
-                <viewController storyboardIdentifier="Settings" id="Yk8-fI-FDN" customClass="SettingsViewController" customModule="Hungry" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="m04-CI-yYE">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hsM-y4-s5p">
-                                <rect key="frame" x="63" y="256" width="53" height="24"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I2M-wh-NZI">
-                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                                <items>
-                                    <navigationItem title="Account" id="JTJ-HT-VyP">
-                                        <barButtonItem key="rightBarButtonItem" title="Logout" id="M0b-Jp-GZK">
-                                            <connections>
-                                                <action selector="logoutButton:" destination="Yk8-fI-FDN" id="kyI-HQ-BLz"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HungryBanner" translatesAutoresizingMaskIntoConstraints="NO" id="pIB-Ba-IFf">
-                                <rect key="frame" x="67" y="97" width="240" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="3Lr-DS-Sho"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;user email&gt;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cOi-N7-gJA">
-                                <rect key="frame" x="119" y="256" width="240" height="24"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" red="0.63893951589999998" green="0.16159826220000001" blue="0.18317346400000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="cOi-N7-gJA" firstAttribute="leading" secondItem="XCg-nK-NeK" secondAttribute="leading" constant="119" id="1TQ-rq-6dD"/>
-                            <constraint firstItem="XCg-nK-NeK" firstAttribute="trailing" secondItem="pIB-Ba-IFf" secondAttribute="trailing" constant="68" id="Mfs-fX-cEx"/>
-                            <constraint firstItem="hsM-y4-s5p" firstAttribute="baseline" secondItem="cOi-N7-gJA" secondAttribute="baseline" id="RBk-us-2Sx"/>
-                            <constraint firstItem="XCg-nK-NeK" firstAttribute="bottom" secondItem="cOi-N7-gJA" secondAttribute="bottom" constant="387" id="XDA-cI-eGq"/>
-                            <constraint firstItem="pIB-Ba-IFf" firstAttribute="leading" secondItem="XCg-nK-NeK" secondAttribute="leading" constant="67" id="Y9v-Tr-BLR"/>
-                            <constraint firstItem="hsM-y4-s5p" firstAttribute="firstBaseline" secondItem="cOi-N7-gJA" secondAttribute="firstBaseline" id="ZgU-68-7RY"/>
-                            <constraint firstItem="cOi-N7-gJA" firstAttribute="top" secondItem="pIB-Ba-IFf" secondAttribute="bottom" constant="31" id="erL-bs-NOW"/>
-                            <constraint firstItem="XCg-nK-NeK" firstAttribute="trailing" secondItem="cOi-N7-gJA" secondAttribute="trailing" constant="16" id="nWF-ej-YqI"/>
-                            <constraint firstAttribute="trailing" secondItem="I2M-wh-NZI" secondAttribute="trailing" id="nwT-VQ-R2Y"/>
-                            <constraint firstItem="I2M-wh-NZI" firstAttribute="leading" secondItem="m04-CI-yYE" secondAttribute="leading" id="uAC-KK-ZYj"/>
-                            <constraint firstItem="pIB-Ba-IFf" firstAttribute="centerX" secondItem="I2M-wh-NZI" secondAttribute="centerX" id="uFE-Et-YmF"/>
-                            <constraint firstItem="cOi-N7-gJA" firstAttribute="leading" secondItem="hsM-y4-s5p" secondAttribute="trailing" constant="3" id="vnE-cc-zqx"/>
-                            <constraint firstItem="I2M-wh-NZI" firstAttribute="top" secondItem="XCg-nK-NeK" secondAttribute="top" id="xV2-K4-LNt"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="XCg-nK-NeK"/>
-                    </view>
-                    <nil key="simulatedTopBarMetrics"/>
-                    <connections>
-                        <outlet property="emailLabel" destination="cOi-N7-gJA" id="Wmx-9E-Rpg"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9gQ-1b-yJi" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-260" y="934"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="HJq-6E-5hw">

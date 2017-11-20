@@ -5,6 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
@@ -19,14 +20,14 @@
         </array>
     </customFonts>
     <scenes>
-        <!--Collection View Controller-->
+        <!--Home-->
         <scene sceneID="gKr-sh-Kmg">
             <objects>
                 <collectionViewController id="59m-5c-ThA" customClass="CollectionViewController" customModule="Hungry" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="h0I-g5-wbe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.63893951589999998" green="0.16159826220000001" blue="0.18317346400000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="LmR-jw-39A">
                             <size key="itemSize" width="194" height="152"/>
                             <size key="headerReferenceSize" width="50" height="50"/>
@@ -78,10 +79,11 @@
                             <outlet property="dataSource" destination="59m-5c-ThA" id="Ve2-Q0-db9"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" id="xdu-mY-ONI">
+                    <navigationItem key="navigationItem" title="Home" id="xdu-mY-ONI">
                         <barButtonItem key="rightBarButtonItem" title="Settings" id="t8h-yJ-gZ2">
                             <connections>
                                 <action selector="settingsButton:" destination="59m-5c-ThA" id="LpS-ya-ykC"/>
+                                <segue destination="p2G-lZ-GAR" kind="show" id="4JD-7N-Pgf"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -169,12 +171,14 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Fk1-DL-m3U">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
                         <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="e4f-XU-sCK">
                             <rect key="frame" x="0.0" y="72" width="375" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
-                            <state key="normal" title="Add Item +"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                            <state key="normal" title="Add Item +">
+                                <color key="titleColor" red="0.63893951589999998" green="0.16159826220000001" blue="0.18317346400000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
                             <connections>
                                 <action selector="btnAddAction:" destination="Bnw-kF-gq1" eventType="touchUpInside" id="srz-XT-xba"/>
                             </connections>
@@ -187,6 +191,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -207,7 +212,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="wI2-Ax-vQ6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifier" rowHeight="100" id="UZE-vn-kZF" customClass="RecipeViewCell" customModule="Hungry" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="100"/>
@@ -247,6 +252,7 @@
                                             </constraints>
                                         </stackView>
                                     </subviews>
+                                    <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="trailingMargin" secondItem="ScU-kW-CHV" secondAttribute="trailing" constant="91" id="7Gm-z2-7XY"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="ScU-kW-CHV" secondAttribute="trailing" constant="91" id="8Go-JV-R2q"/>
@@ -267,6 +273,7 @@
                                         <constraint firstItem="hQg-NV-7NX" firstAttribute="trailing" secondItem="7Vh-Ta-qbc" secondAttribute="trailing" constant="52" id="yRT-rH-PBy"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <outlet property="prepTimeLabel" destination="7Vh-Ta-qbc" id="bQT-xx-Vus"/>
                                     <outlet property="ratingControl" destination="ScU-kW-CHV" id="5GJ-EQ-XS1"/>
@@ -281,7 +288,7 @@
                             <outlet property="delegate" destination="fOI-rR-z3A" id="hV1-GN-cPc"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="eVj-4c-ZZc"/>
+                    <navigationItem key="navigationItem" title="Recipe Box" id="eVj-4c-ZZc"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9go-5a-9bQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -441,8 +448,81 @@
             </objects>
             <point key="canvasLocation" x="-1665" y="-968"/>
         </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="gRe-Oi-Te0">
+            <objects>
+                <viewController storyboardIdentifier="Settings" id="p2G-lZ-GAR" customClass="SettingsViewController" customModule="Hungry" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OWk-hy-xzF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eRZ-kA-3oL">
+                                <rect key="frame" x="63" y="207" width="53" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Yb-cP-Mgc">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <color key="barTintColor" red="0.63893951589999998" green="0.16159826220000001" blue="0.18317346400000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Account" id="Apy-TG-HdN">
+                                        <barButtonItem key="rightBarButtonItem" title="Logout" id="eAz-zY-YSs">
+                                            <color key="tintColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <action selector="logoutButton:" destination="p2G-lZ-GAR" id="qPn-QM-PmY"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HungryBanner" translatesAutoresizingMaskIntoConstraints="NO" id="hpr-zR-oUe">
+                                <rect key="frame" x="67" y="48" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="Z8l-LY-6AC"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;user email&gt;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vqh-qp-HBi">
+                                <rect key="frame" x="119" y="207" width="240" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.63893951589999998" green="0.16159826220000001" blue="0.18317346400000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vqh-qp-HBi" firstAttribute="leading" secondItem="fV5-Lt-HXK" secondAttribute="leading" constant="119" id="0CD-gf-er8"/>
+                            <constraint firstAttribute="trailing" secondItem="9Yb-cP-Mgc" secondAttribute="trailing" id="0Fm-uF-nI7"/>
+                            <constraint firstItem="fV5-Lt-HXK" firstAttribute="bottom" secondItem="vqh-qp-HBi" secondAttribute="bottom" constant="387" id="HPw-sK-dqr"/>
+                            <constraint firstItem="fV5-Lt-HXK" firstAttribute="trailing" secondItem="hpr-zR-oUe" secondAttribute="trailing" constant="68" id="J3t-Ih-DQg"/>
+                            <constraint firstItem="vqh-qp-HBi" firstAttribute="top" secondItem="hpr-zR-oUe" secondAttribute="bottom" constant="31" id="MnY-WF-vij"/>
+                            <constraint firstItem="9Yb-cP-Mgc" firstAttribute="top" secondItem="fV5-Lt-HXK" secondAttribute="top" id="PtA-Xv-Uoh"/>
+                            <constraint firstItem="vqh-qp-HBi" firstAttribute="leading" secondItem="eRZ-kA-3oL" secondAttribute="trailing" constant="3" id="ZHV-rx-46i"/>
+                            <constraint firstItem="hpr-zR-oUe" firstAttribute="centerX" secondItem="9Yb-cP-Mgc" secondAttribute="centerX" id="Ze7-3B-i1e"/>
+                            <constraint firstItem="hpr-zR-oUe" firstAttribute="leading" secondItem="fV5-Lt-HXK" secondAttribute="leading" constant="67" id="gFd-4S-37l"/>
+                            <constraint firstItem="eRZ-kA-3oL" firstAttribute="firstBaseline" secondItem="vqh-qp-HBi" secondAttribute="firstBaseline" id="mPW-8B-8F3"/>
+                            <constraint firstItem="9Yb-cP-Mgc" firstAttribute="leading" secondItem="OWk-hy-xzF" secondAttribute="leading" id="plC-FX-tw8"/>
+                            <constraint firstItem="fV5-Lt-HXK" firstAttribute="trailing" secondItem="vqh-qp-HBi" secondAttribute="trailing" constant="16" id="qTM-G7-Pp8"/>
+                            <constraint firstItem="eRZ-kA-3oL" firstAttribute="baseline" secondItem="vqh-qp-HBi" secondAttribute="baseline" id="r0g-TZ-h1E"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fV5-Lt-HXK"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="B2y-gf-iRC"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="emailLabel" destination="vqh-qp-HBi" id="D4x-fK-1As"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5uW-GC-Tiq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1" y="-968"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="HungryBanner" width="322" height="218"/>
         <image name="home" width="30" height="30"/>
         <image name="list" width="30" height="30"/>
         <image name="search" width="30" height="30"/>
