@@ -197,11 +197,20 @@
                         <outlet property="lastNameTextField" destination="MJs-fZ-uAC" id="QbS-uW-eHj"/>
                         <outlet property="passwordTextField" destination="3db-9t-S66" id="dlc-df-kLu"/>
                         <outlet property="userNameTextField" destination="vQH-vg-FST" id="RR6-0a-gjf"/>
+                        <segue destination="OtD-Ax-BMI" kind="show" id="imo-OB-cGG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e8J-tL-YYb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1345" y="133"/>
+            <point key="canvasLocation" x="1311" y="76"/>
+        </scene>
+        <!--Main3-->
+        <scene sceneID="Qqq-xQ-Pod">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main3" id="OtD-Ax-BMI" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jh7-Y5-HeQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2222" y="76"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="HJq-6E-5hw">

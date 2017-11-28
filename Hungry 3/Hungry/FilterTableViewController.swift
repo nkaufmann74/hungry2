@@ -10,7 +10,6 @@ import UIKit
 
 class FilterTableViewController: UITableViewController {
     var categories = ["Popular", "Recent", "Chicken", "Beef","Low Carb", "Random"]
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -39,11 +38,11 @@ class FilterTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-            cell.textLabel!.text = categories[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "filterCell", for: indexPath) as? FilterTableViewCell
+        cell?.filterLabel.text = categories[indexPath.row]
         // Configure the cell...
 
-        return cell
+        return cell!
     }
 
     /*

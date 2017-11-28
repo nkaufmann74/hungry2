@@ -20,6 +20,7 @@
 		A738E02A1FA0129F00FD37E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A738E0281FA0129F00FD37E8 /* Main.storyboard */; };
 		A738E02D1FA0129F00FD37E8 /* Hungry.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A738E02B1FA0129F00FD37E8 /* Hungry.xcdatamodeld */; };
 		A738E0321FA0129F00FD37E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A738E0301FA0129F00FD37E8 /* LaunchScreen.storyboard */; };
+		A7C235101FC5316300B33A98 /* FilterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C2350F1FC5316300B33A98 /* FilterTableViewCell.swift */; };
 		E82515941FB5335300AD39EA /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82515931FB5335300AD39EA /* Recipe.swift */; };
 		E82515981FB5339200AD39EA /* RecipeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82515971FB5339200AD39EA /* RecipeTableViewController.swift */; };
 		E825159A1FB533C400AD39EA /* RecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82515991FB533C400AD39EA /* RecipeViewController.swift */; };
@@ -47,6 +48,7 @@
 		A738E02C1FA0129F00FD37E8 /* Hungry.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Hungry.xcdatamodel; sourceTree = "<group>"; };
 		A738E0311FA0129F00FD37E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A738E0331FA0129F00FD37E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7C2350F1FC5316300B33A98 /* FilterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterTableViewCell.swift; sourceTree = "<group>"; };
 		AB2B5ED9E16C1134E5F912B5 /* Pods-Hungry.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hungry.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hungry/Pods-Hungry.release.xcconfig"; sourceTree = "<group>"; };
 		BF071572BE8B45785A0871B6 /* Pods_Hungry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hungry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD934D6ECF2474F954C98B2B /* Pods-Hungry.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hungry.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hungry/Pods-Hungry.debug.xcconfig"; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 				E8C61DEC1FC27153002A524C /* CollectionViewController.swift */,
 				E8A64B9D1FA985A500634716 /* FilterTableViewController.swift */,
 				57845B921FB536C8002AD797 /* Item.swift */,
+				A7C2350F1FC5316300B33A98 /* FilterTableViewCell.swift */,
 			);
 			path = Hungry;
 			sourceTree = "<group>";
@@ -297,6 +300,7 @@
 				E8A64B9F1FA985A500634716 /* CollectionViewCell.swift in Sources */,
 				E8A64BA01FA985A500634716 /* FilterTableViewController.swift in Sources */,
 				A738E0271FA0129F00FD37E8 /* ViewController.swift in Sources */,
+				A7C235101FC5316300B33A98 /* FilterTableViewCell.swift in Sources */,
 				57CBB51D1FC0C01F00397476 /* SettingsViewController.swift in Sources */,
 				E82515941FB5335300AD39EA /* Recipe.swift in Sources */,
 				E8A64BA51FA9884700634716 /* ListTableViewController.swift in Sources */,
