@@ -212,7 +212,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="wI2-Ax-vQ6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifier" rowHeight="100" id="UZE-vn-kZF" customClass="RecipeViewCell" customModule="Hungry" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="100"/>
@@ -224,48 +224,47 @@
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gcj-Ic-iAF">
                                             <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="100" id="NUe-qh-Bbk"/>
-                                                <constraint firstAttribute="height" constant="100" id="X73-2y-yPe"/>
+                                                <constraint firstAttribute="width" constant="100" id="680-Nu-pt3"/>
+                                                <constraint firstAttribute="height" constant="100" id="jcR-cB-FwJ"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;Recipe-Label&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hQg-NV-7NX">
-                                            <rect key="frame" x="259" y="11" width="152" height="8"/>
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="&lt;Recipe-Label&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hQg-NV-7NX">
+                                            <rect key="frame" x="105" y="7" width="138" height="19"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;prep-time&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Vh-Ta-qbc">
-                                            <rect key="frame" x="259" y="25" width="100" height="12"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="&lt;prep-time&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Vh-Ta-qbc">
+                                            <rect key="frame" x="107" y="30.5" width="71.5" height="14.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <color key="textColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ScU-kW-CHV" customClass="RatingControl" customModule="Hungry" customModuleProvider="target">
-                                            <rect key="frame" x="108" y="45" width="252" height="44"/>
+                                            <rect key="frame" x="107" y="50" width="252" height="44"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" relation="lessThanOrEqual" constant="252" id="NH7-ap-Z9m"/>
-                                                <constraint firstAttribute="height" relation="lessThanOrEqual" constant="44" id="O05-Uo-Nn8"/>
-                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="160" id="pQa-vL-nip"/>
-                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="32" id="xtp-EA-g4f"/>
+                                                <constraint firstAttribute="width" constant="252" id="3ks-gj-TEP"/>
+                                                <constraint firstAttribute="height" constant="44" id="cel-Hi-xe5"/>
                                             </constraints>
                                         </stackView>
                                     </subviews>
                                     <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
-                                        <constraint firstAttribute="trailingMargin" secondItem="ScU-kW-CHV" secondAttribute="trailing" constant="-1" id="H1V-rx-KgM"/>
-                                        <constraint firstItem="gcj-Ic-iAF" firstAttribute="centerY" secondItem="1Oy-aZ-ESl" secondAttribute="centerY" id="JUz-QI-l8Z"/>
-                                        <constraint firstItem="7Vh-Ta-qbc" firstAttribute="top" secondItem="hQg-NV-7NX" secondAttribute="bottom" constant="6" id="OSS-QB-nXJ"/>
-                                        <constraint firstItem="ScU-kW-CHV" firstAttribute="bottom" secondItem="1Oy-aZ-ESl" secondAttribute="bottomMargin" id="Vdy-Zp-fDn"/>
-                                        <constraint firstItem="ScU-kW-CHV" firstAttribute="top" secondItem="7Vh-Ta-qbc" secondAttribute="bottom" constant="8" id="d1j-rm-epO"/>
-                                        <constraint firstItem="hQg-NV-7NX" firstAttribute="leading" secondItem="7Vh-Ta-qbc" secondAttribute="leading" id="fwK-Lo-OTU"/>
-                                        <constraint firstItem="hQg-NV-7NX" firstAttribute="trailing" secondItem="1Oy-aZ-ESl" secondAttribute="trailingMargin" constant="52" id="ibn-Bo-b7A"/>
-                                        <constraint firstItem="ScU-kW-CHV" firstAttribute="leading" secondItem="gcj-Ic-iAF" secondAttribute="trailing" constant="8" symbolic="YES" id="nCr-9z-yTa"/>
-                                        <constraint firstItem="7Vh-Ta-qbc" firstAttribute="top" secondItem="hQg-NV-7NX" secondAttribute="bottom" constant="6" id="nSs-Fl-beU"/>
-                                        <constraint firstItem="hQg-NV-7NX" firstAttribute="top" secondItem="1Oy-aZ-ESl" secondAttribute="topMargin" id="pp9-5t-nUr"/>
-                                        <constraint firstItem="7Vh-Ta-qbc" firstAttribute="top" secondItem="hQg-NV-7NX" secondAttribute="bottom" constant="6" id="sv0-Fi-BWT"/>
-                                        <constraint firstItem="ScU-kW-CHV" firstAttribute="top" secondItem="hQg-NV-7NX" secondAttribute="bottom" constant="26" id="uHh-g5-cu8"/>
-                                        <constraint firstItem="gcj-Ic-iAF" firstAttribute="top" secondItem="1Oy-aZ-ESl" secondAttribute="top" id="wlq-mS-nID"/>
-                                        <constraint firstItem="hQg-NV-7NX" firstAttribute="trailing" secondItem="7Vh-Ta-qbc" secondAttribute="trailing" constant="52" id="yRT-rH-PBy"/>
+                                        <constraint firstItem="hQg-NV-7NX" firstAttribute="leading" secondItem="gcj-Ic-iAF" secondAttribute="trailing" constant="7" id="CEy-cI-Pvp"/>
+                                        <constraint firstItem="hQg-NV-7NX" firstAttribute="leading" secondItem="gcj-Ic-iAF" secondAttribute="trailing" constant="5" id="EKE-j3-oqd" userLabel="Recipe Label.leading = Recipe Image.trailing + 7"/>
+                                        <constraint firstAttribute="bottom" secondItem="ScU-kW-CHV" secondAttribute="bottom" constant="5" id="I3x-ee-ROu" userLabel="bottom = Rating Control.bottom + 7"/>
+                                        <constraint firstItem="ScU-kW-CHV" firstAttribute="top" secondItem="7Vh-Ta-qbc" secondAttribute="bottom" constant="5" id="KBO-uQ-6pU" userLabel="Rating Control.top = Prep Time Label.bottom + 7"/>
+                                        <constraint firstItem="hQg-NV-7NX" firstAttribute="leading" secondItem="gcj-Ic-iAF" secondAttribute="trailing" constant="7" id="TV3-IX-39a"/>
+                                        <constraint firstItem="gcj-Ic-iAF" firstAttribute="top" secondItem="1Oy-aZ-ESl" secondAttribute="top" id="UiO-jr-yvf"/>
+                                        <constraint firstItem="ScU-kW-CHV" firstAttribute="leading" secondItem="gcj-Ic-iAF" secondAttribute="trailing" constant="5" id="Wmj-mt-6YF" userLabel="Rating Control.leading = Recipe Image.trailing + 7"/>
+                                        <constraint firstItem="7Vh-Ta-qbc" firstAttribute="leading" secondItem="gcj-Ic-iAF" secondAttribute="trailing" constant="5" id="Zhm-NV-wPk" userLabel="Prep Time Label.leading = Recipe Image.trailing + 7"/>
+                                        <constraint firstItem="ScU-kW-CHV" firstAttribute="leading" secondItem="gcj-Ic-iAF" secondAttribute="trailing" constant="7" id="g2D-Ix-NTo"/>
+                                        <constraint firstItem="hQg-NV-7NX" firstAttribute="top" secondItem="1Oy-aZ-ESl" secondAttribute="top" constant="5" id="h24-cn-8W7" userLabel="Recipe Label.top = top + 7"/>
+                                        <constraint firstAttribute="bottom" secondItem="gcj-Ic-iAF" secondAttribute="bottom" id="hCH-40-ZOb"/>
+                                        <constraint firstItem="hQg-NV-7NX" firstAttribute="leading" secondItem="gcj-Ic-iAF" secondAttribute="trailing" constant="5" id="oks-GX-F2k" userLabel="Recipe Label.leading = Recipe Image.trailing + 7"/>
+                                        <constraint firstItem="7Vh-Ta-qbc" firstAttribute="top" secondItem="hQg-NV-7NX" secondAttribute="bottom" constant="5" id="t6f-CN-bnQ" userLabel="Prep Time Label.top = Recipe Label.bottom + 7"/>
+                                        <constraint firstItem="gcj-Ic-iAF" firstAttribute="leading" secondItem="1Oy-aZ-ESl" secondAttribute="leading" id="ybT-zC-qP5"/>
+                                        <constraint firstItem="7Vh-Ta-qbc" firstAttribute="leading" secondItem="gcj-Ic-iAF" secondAttribute="trailing" constant="7" id="ypT-NY-rCs"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -288,7 +287,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9go-5a-9bQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-175" y="1638"/>
+            <point key="canvasLocation" x="-175.19999999999999" y="1637.6311844077961"/>
         </scene>
         <!--Recipe View Controller-->
         <scene sceneID="9gc-yW-m1z">
