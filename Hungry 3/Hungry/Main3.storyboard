@@ -225,7 +225,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="slk-Uc-aUR">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="670"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="0LN-bI-XG2" customClass="RatingControl" customModule="Hungry" customModuleProvider="target">
+                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="0LN-bI-XG2" customClass="RatingControl" customModule="Hungry" customModuleProvider="target">
                                                 <rect key="frame" x="8" y="375" width="252" height="44"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="44" id="Icd-aK-2Qs"/>
@@ -401,7 +401,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="KWN-8J-fVA"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Uvx-jl-oz5"/>
+                    <navigationItem key="navigationItem" id="Uvx-jl-oz5">
+                        <barButtonItem key="rightBarButtonItem" title="Settings" id="SnN-hm-hVa">
+                            <connections>
+                                <segue destination="p2G-lZ-GAR" kind="show" id="LyB-us-SFG"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="2rt-5q-Fag" id="rL3-q0-PR4"/>
                     </connections>
@@ -419,7 +425,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eRZ-kA-3oL">
-                                <rect key="frame" x="63" y="256" width="53" height="24"/>
+                                <rect key="frame" x="63" y="207" width="53" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -442,13 +448,13 @@
                                 </items>
                             </navigationBar>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HungryBanner" translatesAutoresizingMaskIntoConstraints="NO" id="hpr-zR-oUe">
-                                <rect key="frame" x="67" y="97" width="240" height="128"/>
+                                <rect key="frame" x="67" y="48" width="240" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="Z8l-LY-6AC"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;user email&gt;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vqh-qp-HBi">
-                                <rect key="frame" x="119" y="256" width="240" height="24"/>
+                                <rect key="frame" x="119" y="207" width="240" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
