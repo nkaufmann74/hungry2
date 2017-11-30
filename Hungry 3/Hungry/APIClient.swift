@@ -13,10 +13,10 @@ class APIClient {
     
     static func Get(term: String){
        
-        var url = "\(baseUrl)" + "&" + "\(term)"
+//        var url = "\(baseUrl)" + "&" + "\(term)"
         let session = URLSession.shared
         
-        guard let unwrappedURL = url else { print("Error unwrapping URL"); return}
+//        guard let unwrappedURL = url else { print("Error unwrapping URL"); return}
         
         
         

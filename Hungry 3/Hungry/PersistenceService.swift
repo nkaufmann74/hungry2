@@ -133,14 +133,13 @@ class PersistenceService {
     
     func deleteItem(index:Int) {
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName:"Item")
-        items.remove(at: index)
+        let item = items.remove(at: index)
         if (try? getItem(index: index)) != nil {
             if let result = try? context.fetch(fetchRequest) {
                 do {
                     try context.save()
-                    for object in result {
-                        context.delete(object as! NSManagedObject)
-                    }
+                    context.delete(item as! NSManagedObject)
+                    
                 } catch {
                     let nserror = error as NSError
                     NSLog("Unresolved error \(nserror), \(nserror.userInfo)")
