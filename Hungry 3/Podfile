@@ -1,12 +1,13 @@
 # Uncomment the next line to define a global platform for your project
 platform :ios, '11.0'
 
+inhibit_all_warnings!
+use_frameworks!
 target 'Hungry' do
   pod 'Firebase/Auth'
-  use_frameworks!
   pod 'FacebookLogin'
   pod 'FacebookShare'
   pod 'FacebookCore'
+  pod 'Alamofire', '~> 4.2.0'
 end
-
 

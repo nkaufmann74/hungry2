@@ -7,27 +7,37 @@
 //
 
 import UIKit
+import Alamofire
 
 class HomeViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     @IBOutlet weak var collectionView: UICollectionView!
     
+    
+    var labels = ["Discover New Recipes", "Pastalicious", "Quick and Easy", "Dinner Dates", "Large Parties"]
+    var photos = [UIImage(named: "pancakes"), UIImage(named: "pasta"), UIImage(named:"ratatouille"), UIImage(named:"fish"), UIImage(named:"pizza")]
+    var food = [DataStore]()
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+       
     }
-
+    /*
+    func downloadData(){
+        
+    }
+*/
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 9
+        return 5
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CollectionViewCell
-        
+        cell.header?.text = labels[indexPath.row]
+        cell.foodImage?.image = photos[indexPath.row]
         return cell
     }
 
